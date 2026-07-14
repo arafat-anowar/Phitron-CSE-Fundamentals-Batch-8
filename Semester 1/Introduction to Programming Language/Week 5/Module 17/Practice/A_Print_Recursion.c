@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void print(int i,int n){
+    if (i>n)
+    {
+        return;
+    }
+    printf("I love Recursion\n");
+    print(++i,n);
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+
+    print(1,n);
+    return 0;
+}
